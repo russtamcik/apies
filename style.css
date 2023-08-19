@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+body {
+  background: #030321;
+  font-family: Arial;
+}
+
+svg {
+  display: block;
+  font: 10.5em 'Montserrat';
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+  right: 250px;
+  top: 200px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.users-row {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.user-wrap {
+  background-color: #17175a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+}
+
+h3 {
+  color: #ff7171
+}
+
+.user-wrap a {
+  color: #c1c1ff;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn button {
+  border: none;
+  border-radius: 4px;
+  background: #8787fe;
+  padding: 5px 15px;
+  font-size: 17px;
+  transition: 0.3s ease-out;
+}
+
+.btn button:hover {
+  transform: translateY(-10px);
+  background: #4444c4;
+}
+
+.todos-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.todos-wrap {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 20px;
+}
+
+.posts-row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.posts-wrap {
+  padding: 20px;
+  color: #fff;
+  background-color: #17175a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+p {
+  font-size: 18px;
+  color: #4444c4;
+  margin-top: 5px;
+}
+
+.btn_posts {
+  max-width: 100px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background: #6b6b8d;
+  padding: 5px 10px;
+  font-size: 17px;
+  transition: 0.3s ease-out;
+}
+
+.btn_posts:hover {
+  transform: translateY(-10px);
+  background: #7777f3;
+}
+
+.btn_posts a {
+  text-decoration: none;
+  color: #010125;
+}
+
+.comments-row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.comments-wrap {
+  padding: 20px;
+  color: #fff;
+  background-color: #17175a;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.coment_email {
+  color: #c97b07;
+}
+
+.coment_name {
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.coment_body {
+  margin-top: 20px;
+  color: #ff9c62;
+  font-style: italic;
+}
+
+.albums-row {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.albums-wrap {
+  color: #fff;
+  padding: 20px;
+  background-color: #17175a;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.btn_albums {
+  margin-top: 10px;
+  text-align: end;
+}
+
+.btn_albums a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn_albums button {
+  border: none;
+  border-radius: 4px;
+  background: #8787fe;
+  padding: 5px 15px;
+  font-size: 17px;
+  transition: 0.3s ease-out;
+}
+
+.btn_albums button:hover {
+  transform: translateX(-10px);
+  background: #4444c4;
+}
+
+.photos-row {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.photos-wrap {
+  color: #c79c0f;
+  padding: 20px;
+  background-color: #17175a;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+.photo_img {
+  padding-top: 10px;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
